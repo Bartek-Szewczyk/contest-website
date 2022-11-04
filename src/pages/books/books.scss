@@ -1,0 +1,36 @@
+.booksWrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+.booksContainer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    padding-top: 30px;
+    font-size: 60px;
+    padding-bottom: 20px;
+  }
+  &__book {
+    font-size: 30px;
+    width: fit-content;
+  }
+  &__bookIcon {
+    width: 30px;
+    padding-right: 10px;
+    fill: #1e90ff;
+  }
+  &__singleBook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
