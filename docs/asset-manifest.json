@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/contest-website/static/css/main.d379d42e.css",
+    "main.js": "/contest-website/static/js/main.8460b43c.js",
+    "static/media/video.mp4": "/contest-website/static/media/video.a73b3f9e37544750999f.mp4",
+    "index.html": "/contest-website/index.html",
+    "main.d379d42e.css.map": "/contest-website/static/css/main.d379d42e.css.map",
+    "main.8460b43c.js.map": "/contest-website/static/js/main.8460b43c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d379d42e.css",
+    "static/js/main.8460b43c.js"
+  ]
+}
