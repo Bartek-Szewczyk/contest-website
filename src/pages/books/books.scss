@@ -13,11 +13,12 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
   &__title {
     padding-top: 30px;
     font-size: 65px;
     padding-bottom: 20px;
+    text-align: center;
   }
   &__book {
     font-size: 30px;
