@@ -25,7 +25,7 @@ function Books() {
   return (
     <div className="booksWrapper">
       <div className="booksContainer">
-        <div className="booksContainer__title">Literatura</div>
+        <h2 className="booksContainer__title">Literatura</h2>
         {data.Books.items.map((item) => (
           <div className="booksContainer__singleBook">
             <BookIcon classProp="booksContainer__bookIcon" />

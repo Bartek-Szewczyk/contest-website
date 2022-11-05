@@ -48,9 +48,9 @@ function Footer() {
       <div className="footerContainer">
         <div className="footerContainer__mainContent">
           <div className="footerContainer__mainContent__flex">
-            <h3 className="footerContainer__mainContent__flex__title">
+            <p className="footerContainer__mainContent__flex__title">
               Patronat medialny
-            </h3>
+            </p>
             {data.Medias.items.map((item) => (
               <a href={item.link} target="blank">
                 <img className="pp" src={item.logo[0].url} alt="" />
@@ -58,9 +58,9 @@ function Footer() {
             ))}
           </div>
           <div className="footerContainer__mainContent__flex">
-            <h3 className="footerContainer__mainContent__flex__title">
+            <p className="footerContainer__mainContent__flex__title">
               Partnerzy
-            </h3>
+            </p>
             {data.Partners.items.map((item) => (
               <ul className="footerContainer__mainContent__flex__list">
                 <li>
@@ -76,9 +76,9 @@ function Footer() {
             ))}
           </div>
           <div className="footerContainer__mainContent__flex">
-            <h3 className="footerContainer__mainContent__flex__title">
+            <p className="footerContainer__mainContent__flex__title">
               Znajdz Nas!
-            </h3>
+            </p>
 
             {data.Socials.facebook && (
               <a
