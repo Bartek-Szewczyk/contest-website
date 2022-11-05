@@ -2,6 +2,7 @@ import React from "react";
 import { useQuery, gql } from "@apollo/client";
 import "./files.scss";
 import FileIcon from "../../assets/fileIcon";
+import Loading from "../../components/loading/loading";
 
 const FILES_QUERY = gql`
   {
@@ -20,7 +21,7 @@ const FILES_QUERY = gql`
 function Files() {
   const { data, loading, error } = useQuery(FILES_QUERY);
 
-  if (loading) return null;
+  if (loading) return <Loading />;
   if (error) return <pre>{error.message}</pre>;
   return (
     <div className="filesWrapper">

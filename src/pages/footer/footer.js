@@ -4,6 +4,7 @@ import "./footer.scss";
 import InstagramIcon from "../../assets/instagramIcon";
 import FacebookIcon from "../../assets/facebookIcon";
 import YouTubeIcon from "../../assets/youtubeIcon";
+import Loading from "../../components/loading/loading";
 
 const FOOTER_QUERY = gql`
   {
@@ -39,7 +40,7 @@ const FOOTER_QUERY = gql`
 function Footer() {
   const { data, loading, error } = useQuery(FOOTER_QUERY);
 
-  if (loading) return "Loading...";
+  if (loading) return <Loading />;
   if (error) return <pre>{error.message}</pre>;
 
   console.log(data);

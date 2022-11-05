@@ -1,6 +1,7 @@
 import React from "react";
 import { useQuery, gql } from "@apollo/client";
 import "./about.scss";
+import Loading from "../../components/loading/loading";
 
 const ABOUT_QUERY = gql`
   {
@@ -14,7 +15,7 @@ const ABOUT_QUERY = gql`
 function About() {
   const { data, loading, error } = useQuery(ABOUT_QUERY);
 
-  if (loading) return null;
+  if (loading) return <Loading />;
   if (error) return <pre>{error.message}</pre>;
   return (
     <div className="aboutWrapper">

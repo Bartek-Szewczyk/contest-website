@@ -5,6 +5,7 @@ import EmailIcon from "../../assets/emailIcon";
 import SchoolIcon from "../../assets/schooleIcon";
 import PhoneIcon from "../../assets/phoneIcon";
 import UserIcon from "../../assets/userIcon";
+import Loading from "../../components/loading/loading";
 
 const CONTACT_QUERY = gql`
   {
@@ -23,7 +24,7 @@ const CONTACT_QUERY = gql`
 function Contact() {
   const { data, loading, error } = useQuery(CONTACT_QUERY);
 
-  if (loading) return null;
+  if (loading) return <Loading />;
   if (error) return <pre>{error.message}</pre>;
   return (
     <div className="contactWrapper">

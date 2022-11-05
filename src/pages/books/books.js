@@ -2,6 +2,7 @@ import React from "react";
 import { useQuery, gql } from "@apollo/client";
 import "./books.scss";
 import BookIcon from "../../assets/bookIcon";
+import Loading from "../../components/loading/loading";
 
 const Books_QUERY = gql`
   {
@@ -20,7 +21,7 @@ const Books_QUERY = gql`
 function Books() {
   const { data, loading, error } = useQuery(Books_QUERY);
 
-  if (loading) return "Loading...";
+  if (loading) return <Loading />;
   if (error) return <pre>{error.message}</pre>;
   return (
     <div className="booksWrapper">
