@@ -1,0 +1,78 @@
+.filesWrapper {
+  width: 100%;
+  background-color: #fff;
+}
+.filesContainer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  &__title {
+    padding-top: 30px;
+    font-size: 65px;
+    padding-bottom: 20px;
+  }
+  &__files {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__singleFile {
+    &__icon {
+      width: 30px;
+      fill: #1e90ff;
+      margin-right: 10px;
+    }
+    &__name {
+      font-size: 30px;
+      color: #000;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
+}
+.under {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.under:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  width: 0px;
+  height: 2px;
+  background: #1e90ff;
+}
+
+.under:hover:after {
+  width: 100%;
+}
+.animation_jump {
+  animation: jump 3s infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
