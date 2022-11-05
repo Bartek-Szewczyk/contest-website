@@ -8,6 +8,7 @@ import Footer from "./pages/footer/footer";
 import Contact from "./pages/contact/contact";
 import Books from "./pages/books/books";
 import Files from "./pages/files/files";
+import About from "./pages/about/about";
 
 const client = new ApolloClient({
   uri: "https://graphql.prepr.io/523851c92aa233426d454cc96c3e4485672cea26e59bf08847bdc5cf31427618",
@@ -19,6 +20,7 @@ root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
       <Home />
+      <About />
       <Files />
       <Books />
       <Contact />
