@@ -43,7 +43,6 @@ function Footer() {
   if (loading) return <Loading />;
   if (error) return <pre>{error.message}</pre>;
 
-  console.log(data);
   return (
     <div className="footerWrapper">
       <div className="footerContainer">

@@ -24,7 +24,6 @@ root.render(
       <Helmet>
         <title>Wiem, gdzie mieszkam</title>
         <meta name="description" content="strona konkursu" />
-        <link rel="icon" type="image/png" href={icon} sizes="16x16" />
       </Helmet>
       <Home />
       <About />
@@ -32,13 +31,7 @@ root.render(
       <Books />
       <Contact />
       <Footer />
-      <video
-        className="videoTag"
-        autoPlay
-        loop
-        muted
-        onEnded={console.log(this)}
-      >
+      <video className="videoTag" autoPlay loop muted>
         <source src={video} type="video/mp4" />
       </video>
     </ApolloProvider>
