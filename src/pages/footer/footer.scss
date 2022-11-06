@@ -15,11 +15,19 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 20px;
+    @media (max-width: 755px) {
+      flex-direction: column;
+      align-content: center;
+      text-align: center;
+    }
     &__flex {
       width: 25%;
       padding-left: 15px;
       padding-right: 15px;
       align-items: center;
+      @media (max-width: 755px) {
+        width: 100%;
+      }
       &__title {
         font-weight: 800;
         font-size: 20px;
@@ -58,6 +66,7 @@
     width: 100%;
     display: flex;
     padding: 30px 0;
+    text-align: center;
   }
 }
 .instagram {
