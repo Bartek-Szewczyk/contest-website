@@ -79,34 +79,35 @@ function Footer() {
             <p className="footerContainer__mainContent__flex__title">
               Znajdz Nas!
             </p>
-
-            {data.Socials.facebook && (
-              <a
-                href={data.Socials.facebook.url}
-                target="blank"
-                className="footerContainer__mainContent__flex__icon"
-              >
-                <FacebookIcon classProp="facebook" />
-              </a>
-            )}
-            {data.Socials.instagram && (
-              <a
-                href={data.Socials.instagram.url}
-                target="blank"
-                className="footerContainer__mainContent__flex__icon"
-              >
-                <InstagramIcon classProp="instagram" />
-              </a>
-            )}
-            {data.Socials.youtubel && (
-              <a
-                href={data.Socials.youtube.url}
-                target="blank"
-                className="footerContainer__mainContent__flex__icon"
-              >
-                <YouTubeIcon classProp="icon" />
-              </a>
-            )}
+            <div className="footerContainer__mainContent__flex__icons">
+              {data.Socials.facebook && (
+                <a
+                  href={data.Socials.facebook.url}
+                  target="blank"
+                  className="footerContainer__mainContent__flex__icon"
+                >
+                  <FacebookIcon classProp="facebook" />
+                </a>
+              )}
+              {data.Socials.instagram && (
+                <a
+                  href={data.Socials.instagram.url}
+                  target="blank"
+                  className="footerContainer__mainContent__flex__icon"
+                >
+                  <InstagramIcon classProp="instagram" />
+                </a>
+              )}
+              {data.Socials.youtubel && (
+                <a
+                  href={data.Socials.youtube.url}
+                  target="blank"
+                  className="footerContainer__mainContent__flex__icon"
+                >
+                  <YouTubeIcon classProp="icon" />
+                </a>
+              )}
+            </div>
           </div>
         </div>
         <div className="footerContainer__copyright">

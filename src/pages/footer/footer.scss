@@ -32,6 +32,10 @@
         font-weight: 800;
         font-size: 20px;
       }
+      &__icons {
+        display: flex;
+        align-items: center;
+      }
       &__icon {
         text-decoration: none;
         padding-left: 15px;
