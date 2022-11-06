@@ -19,6 +19,9 @@
     font-size: 60px;
     font-weight: 80;
     margin-bottom: 20px;
+    @media (max-width: 755px) {
+      font-size: 50px;
+    }
   }
   &__subtitle {
     font-size: 24px;

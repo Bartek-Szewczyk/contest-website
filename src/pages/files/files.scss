@@ -18,6 +18,10 @@
     padding-top: 30px;
     font-size: 65px;
     padding-bottom: 20px;
+    @media (max-width: 755px) {
+      font-size: 55px;
+      text-align: center;
+    }
   }
   &__files {
     display: flex;
@@ -34,6 +38,10 @@
       color: #000;
       margin-bottom: 0;
       margin-right: 10px;
+      @media (max-width: 755px) {
+        font-size: 25px;
+        display: inline-flex;
+      }
     }
   }
 }

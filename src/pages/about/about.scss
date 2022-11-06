@@ -17,11 +17,17 @@
   &__title {
     padding-top: 30px;
     font-size: 65px;
-    padding-bottom: 20px;
     text-align: center;
+    @media (max-width: 755px) {
+      font-size: 55px;
+      text-align: center;
+    }
   }
   &__text {
     font-size: 35px;
     text-align: center;
+    @media (max-width: 755px) {
+      font-size: 25px;
+    }
   }
 }
