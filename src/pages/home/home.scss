@@ -9,6 +9,7 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
   &__textWrapper {
     position: relative;
     max-width: 750px;
@@ -27,5 +28,11 @@
     font-size: 24px;
     font-weight: 60;
     margin-bottom: 0;
+  }
+  &__logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 15%;
   }
 }

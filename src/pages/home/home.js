@@ -2,6 +2,7 @@ import React from "react";
 import { useQuery, gql } from "@apollo/client";
 import "./home.scss";
 import Loading from "../../components/loading/loading";
+import logo2 from "../../assets/logo2.png";
 
 const TitleSite_QUERY = gql`
   {
@@ -28,6 +29,7 @@ function Home() {
             {data.TitleSite.description}
           </p>
         </div>
+        <img src={logo2} className="homeContainer__logo" alt="herb" />
       </div>
     </div>
   );
