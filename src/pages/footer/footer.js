@@ -51,8 +51,8 @@ function Footer() {
             <p className="footerContainer__mainContent__flex__title">
               Patronat medialny
             </p>
-            {data.Medias.items.map((item) => (
-              <a href={item.link} target="blank">
+            {data.Medias.items.map((item, index) => (
+              <a href={item.link} target="blank" key={index}>
                 <img className="pp" src={item.logo[0].url} alt="" />
               </a>
             ))}
@@ -62,7 +62,10 @@ function Footer() {
               Partnerzy
             </p>
             {data.Partners.items.map((item) => (
-              <ul className="footerContainer__mainContent__flex__list">
+              <ul
+                className="footerContainer__mainContent__flex__list"
+                key={item.name}
+              >
                 <li>
                   <a
                     href={item.link}

@@ -28,8 +28,8 @@ function Files() {
       <div className="filesContainer">
         <h2 className="filesContainer__title">Pliki do Pobrania</h2>
         <div className="filesContainer__files">
-          {data.Files.items.map((item) => (
-            <div className="filesContainer__singleFile">
+          {data.Files.items.map((item, index) => (
+            <div className="filesContainer__singleFile" key={index}>
               <FileIcon classProp="filesContainer__singleFile__icon animation_jump" />
               <a className="under" href={item.file[0].url} target="blank">
                 <p className="filesContainer__singleFile__name">

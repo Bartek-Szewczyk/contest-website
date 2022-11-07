@@ -51,9 +51,8 @@ function About() {
   const handleClose = () => {
     setShowModal(false);
   };
-  console.log(data);
+
   const openPhoto = (index) => {
-    console.log(index);
     setPhotoIndex(index);
     setIsOpen(true);
   };
@@ -96,18 +95,7 @@ function About() {
           renderHeader={() => (
             <CloseIcon onClick={onClose} classProp="closeIcon" />
           )}
-          // mainSrc={images[photoIndex]}
-          // nextSrc={images[(photoIndex + 1) % images.length]}
-          // prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-          // onCloseRequest={() => setIsOpen(false)}
-          // onMovePrevRequest={() =>
-          //   setPhotoIndex((photoIndex + images.length - 1) % images.length)
-          // }
-          // onMoveNextRequest={() =>
-          //   setPhotoIndex((photoIndex + 1) % images.length)
-          // }
         />
-        {/* )} */}
         <div className="aboutContainer__modal">
           <p className="aboutContainer__modal__title">{modalContent?.title}</p>
           <div
@@ -122,6 +110,7 @@ function About() {
                 className="aboutContainer__modal__images__image"
                 src={item.url}
                 alt=""
+                key={index}
                 onClick={() => openPhoto(index)}
               />
             ))}
@@ -132,7 +121,7 @@ function About() {
         <div className="aboutContainer">
           <h2 className="aboutContainer__title">Aktualności</h2>
           {data.Posts.items.map((item) => (
-            <div className="aboutContainer__postWrapper">
+            <div className="aboutContainer__postWrapper" key={item.title}>
               <div
                 className="aboutContainer__post"
                 onClick={() => showPost(item)}

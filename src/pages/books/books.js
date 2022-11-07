@@ -27,8 +27,8 @@ function Books() {
     <div className="booksWrapper">
       <div className="booksContainer">
         <h2 className="booksContainer__title">Literatura</h2>
-        {data.Books.items.map((item) => (
-          <div className="booksContainer__singleBook">
+        {data.Books.items.map((item, index) => (
+          <div className="booksContainer__singleBook" key={index}>
             <BookIcon classProp="booksContainer__bookIcon" />
             <div
               className="booksContainer__book"
