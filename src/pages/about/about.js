@@ -40,11 +40,14 @@ function About() {
   if (error) return <pre>{error.message}</pre>;
 
   const showPost = (data) => {
-    setImages(
-      data.images.map((item) => {
-        return { src: item.url };
-      })
-    );
+    if (data.images) {
+      setImages(
+        data.images?.map((item) => {
+          return { src: item.url };
+        })
+      );
+    }
+
     setModalContent(data);
     setShowModal(true);
   };
@@ -68,7 +71,6 @@ function About() {
   return (
     <div>
       <Modal show={showModal} handleClose={handleClose}>
-        {/* {isOpen && ( */}
         <Lightbox
           isOpen={isOpen}
           onPrev={gotoPrevious}
