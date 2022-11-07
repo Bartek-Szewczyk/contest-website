@@ -67,6 +67,15 @@ function About() {
 
   const gotoNext = () =>
     photoIndex + 1 < images.length && setPhotoIndex(photoIndex + 1);
+  const getContent = (content) => {
+    const textArray = [];
+    if (content) {
+      content.forEach((item) => {
+        textArray.push(item.html);
+      });
+    }
+    return textArray.join("");
+  };
 
   return (
     <div>
@@ -103,7 +112,7 @@ function About() {
           <div
             className="aboutContainer__modal__content"
             dangerouslySetInnerHTML={{
-              __html: modalContent?.content?.[0]?.html,
+              __html: getContent(modalContent?.content),
             }}
           ></div>
           <div className="aboutContainer__modal__images">
