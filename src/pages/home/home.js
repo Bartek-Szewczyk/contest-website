@@ -27,7 +27,6 @@ function Home() {
   if (error) return <pre>{error.message}</pre>;
 
   const getContent = (content) => {
-    console.log(content);
     const textArray = [];
     if (content) {
       content.forEach((item) => {
@@ -36,7 +35,6 @@ function Home() {
     }
     return textArray.join("");
   };
-  console.log(getContent(data.TitleSite.title));
   return (
     <div className="homeWrapper">
       <div className="homeContainer">
