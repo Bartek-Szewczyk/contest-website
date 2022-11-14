@@ -26,7 +26,7 @@ function Files() {
   return (
     <div className="filesWrapper">
       <div className="filesContainer">
-        <h2 className="filesContainer__title">Pliki do Pobrania</h2>
+        <h2 className="filesContainer__title">Pliki do pobrania</h2>
         <div className="filesContainer__files">
           {data.Files.items.map((item, index) => (
             <div className="filesContainer__singleFile" key={index}>
