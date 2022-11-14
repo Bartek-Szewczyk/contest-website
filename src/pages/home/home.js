@@ -9,7 +9,12 @@ const TitleSite_QUERY = gql`
   {
     TitleSite {
       _id
-      title
+      title {
+        ... on Text {
+          html
+          text
+        }
+      }
       description
     }
   }
@@ -21,11 +26,27 @@ function Home() {
   if (loading) return <Loading />;
   if (error) return <pre>{error.message}</pre>;
 
+  const getContent = (content) => {
+    console.log(content);
+    const textArray = [];
+    if (content) {
+      content.forEach((item) => {
+        textArray.push(item.html);
+      });
+    }
+    return textArray.join("");
+  };
+  console.log(getContent(data.TitleSite.title));
   return (
     <div className="homeWrapper">
       <div className="homeContainer">
         <div className="homeContainer__textWrapper">
-          <h1 className="homeContainer__title">{data.TitleSite.title}</h1>
+          <h1
+            className="homeContainer__title"
+            dangerouslySetInnerHTML={{
+              __html: getContent(data.TitleSite.title),
+            }}
+          ></h1>
           <p className="homeContainer__subtitle">
             {data.TitleSite.description}
           </p>
