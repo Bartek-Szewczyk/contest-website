@@ -9,26 +9,27 @@
   padding-left: 15px;
   padding-right: 15px;
   color: #000;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   display: flex;
   flex-direction: column;
   padding-bottom: 100px;
   &__title {
     padding-top: 30px;
-    font-size: 65px;
+    font-size: 58px;
     padding-bottom: 20px;
     text-align: center;
+    width: 100%;
     @media (max-width: 755px) {
-      font-size: 55px;
+      font-size: 50px;
     }
   }
   &__book {
-    font-size: 30px;
+    font-size: 25px;
     width: fit-content;
 
     @media (max-width: 755px) {
-      font-size: 25px;
+      font-size: 22px;
     }
     @media (max-width: 500px) {
       font-size: 18px;

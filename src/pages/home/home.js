@@ -3,6 +3,7 @@ import { useQuery, gql } from "@apollo/client";
 import "./home.scss";
 import Loading from "../../components/loading/loading";
 import logo2 from "../../assets/logo2.png";
+import logo from "../../assets/logo.png";
 
 const TitleSite_QUERY = gql`
   {
@@ -30,6 +31,7 @@ function Home() {
           </p>
         </div>
         <img src={logo2} className="homeContainer__logo" alt="herb" />
+        <img src={logo} className="homeContainer__logo2" alt="logo" />
       </div>
     </div>
   );
