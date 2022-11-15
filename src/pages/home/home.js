@@ -49,8 +49,12 @@ function Home() {
             {data.TitleSite.description}
           </p>
         </div>
-        <img src={logo2} className="homeContainer__logo" alt="herb" />
-        <img src={logo} className="homeContainer__logo2" alt="logo" />
+        <a href="https://starysacz.um.gov.pl/" target="blank">
+          <img src={logo2} alt="herb" className="homeContainer__logo" />
+        </a>
+        <a href="https://lo.stary.sacz.pl/" target="blank">
+          <img src={logo} className="homeContainer__logo2" alt="logo" />
+        </a>
       </div>
     </div>
   );

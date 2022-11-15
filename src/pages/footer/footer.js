@@ -114,7 +114,13 @@ function Footer() {
           </div>
         </div>
         <div className="footerContainer__copyright">
-          Copyright © 2022 Software Development Bartłomiej Szewczyk
+          <a
+            href="https://www.linkedin.com/in/bart%C5%82omiej-szewczyk-4581b719b/"
+            target={"blank"}
+            className="footerContainer__mainContent__flex__list__link"
+          >
+            Copyright © 2022 Software Development Bartłomiej Szewczyk
+          </a>
         </div>
       </div>
     </div>
