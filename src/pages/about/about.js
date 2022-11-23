@@ -139,8 +139,8 @@ function About() {
               >
                 <p className="aboutContainer__post__title">{item.title}</p>
                 <p className="aboutContainer__post__content">
-                  {item.content[0].text.substring(0, 90)}
-                  {item.content[0].text.length >= 90 ? "..." : ""}
+                  {item.content[0].text.substring(0, 85)}
+                  {item.content[0].text.length >= 85 ? "..." : ""}
                   <ArrowIcon classProp="aboutContainer__post__icon more_jump" />
                 </p>
               </div>
