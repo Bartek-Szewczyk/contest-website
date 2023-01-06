@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/contest-website/static/css/main.7bb7a31b.css",
-    "main.js": "/contest-website/static/js/main.8850e439.js",
-    "static/media/videoBG.mp4": "/contest-website/static/media/videoBG.2088d95f8a73c663ac72.mp4",
-    "static/media/logo.png": "/contest-website/static/media/logo.d332218cf72b26bcb174.png",
-    "static/media/logo2.png": "/contest-website/static/media/logo2.08e536e2b77848736f12.png",
-    "index.html": "/contest-website/index.html",
-    "main.7bb7a31b.css.map": "/contest-website/static/css/main.7bb7a31b.css.map",
-    "main.8850e439.js.map": "/contest-website/static/js/main.8850e439.js.map"
+    "main.css": "/static/css/main.7bb7a31b.css",
+    "main.js": "/static/js/main.177d3ff2.js",
+    "static/media/videoBG.mp4": "/static/media/videoBG.2088d95f8a73c663ac72.mp4",
+    "static/media/logo.png": "/static/media/logo.d332218cf72b26bcb174.png",
+    "static/media/logo2.png": "/static/media/logo2.08e536e2b77848736f12.png",
+    "index.html": "/index.html",
+    "main.7bb7a31b.css.map": "/static/css/main.7bb7a31b.css.map",
+    "main.177d3ff2.js.map": "/static/js/main.177d3ff2.js.map"
   },
   "entrypoints": [
     "static/css/main.7bb7a31b.css",
-    "static/js/main.8850e439.js"
+    "static/js/main.177d3ff2.js"
   ]
 }
