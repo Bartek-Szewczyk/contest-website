@@ -51,6 +51,7 @@ function About() {
     setModalContent(data);
     setShowModal(true);
   };
+  
   const handleClose = () => {
     setShowModal(false);
   };
